@@ -1,4 +1,4 @@
 [build]
-  command = "sh deploy.sh"
+  command = "npm install --no-optional && npm run build && hexo clean && hexo g"
   publish = "public"
   environment = { NODE_VERSION = "lts/*", NODE_ENV = "production" }
